@@ -1,0 +1,39 @@
+    <title>Tech Blog</title>
+</head>
+
+<body>
+    <header>
+    <h1>Tech Blog</h1>
+    <ul>
+        <li>
+            Dashboard
+        </li>
+        <li>
+            Homepage
+        </li>
+        <li>
+            Log in
+        </li>
+        <li>
+            Log out
+        </li>
+    </ul>
+</header>
+
+{{#each blogpost as |blogpost|}}
+<div class="cardcontainer">
+    <div id = "{{blogpost.id}}" class = "card">
+        <div class = "title">
+            <p>{{blogpost.title}}</p>
+            <p id = "postedby">posted by {{blogpost.Profile.username}} on {{blogpost.created_at}}</p>
+        </div>           
+        <div class = "post">
+            <p>{{blogpost.post}}</p>
+        </div>
+    </div>
+</div>
+{{/each}}
+
+<footer>
+    <h2>Thanks for visiting the blog!</h2>
+</footer>

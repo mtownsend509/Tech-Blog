@@ -1,0 +1,170 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    background-color: #d9ead3;
+}
+
+ul, li, h1 {
+    display: inline;
+    border-radius: 15px;
+}
+
+header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #231010;
+}
+
+li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #231010;
+    font-size: 18px;
+    color: white;
+}
+
+ul :hover {
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    justify-content: center;
+}
+
+header, footer {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: #231010;
+}
+
+h1, h2, ul {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin-left: 10px;
+    background-color: #d9ead3;
+    padding: 15px;
+}
+
+p {
+    margin: 2%;
+}
+
+.title p {
+    color: white;
+    background-color: #231010;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+#postedby {
+    font-size: 15px;
+    margin-left: auto;
+}
+
+div {
+    display: block;
+}
+
+.cardcontainer {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 2%;
+    width: 95%;
+    height: 105px;
+}
+
+.post {
+    height: 70%;
+    align-items: center;
+    display: flex;
+    border: solid;
+}
+
+.title {
+    height: 35px;
+    background-color: #231010;
+    color: white;
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: black;
+}
+
+.profileCard {
+    width: 30%;
+    margin: 20% auto;
+    background-color: #231010;
+    border-radius: 12px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileCard h3 {
+    padding: 3% 0%;
+    border-radius: 12px 12px 0px 0px;
+    background-color: #231010;
+    color: white;
+}
+
+.profileCard div {
+    padding:  7% 0%;
+    border-radius: 0px 0px 12px 12px;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #231010;
+}
+
+button {
+    padding: 2%;
+    font-size: 24px;
+    background-color: #231010;
+    color: white;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.profileCard div :hover {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+}
+
+span {
+    background-color: #231010;
+}
+
+
