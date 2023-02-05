@@ -17,6 +17,10 @@ Comments.init(
             type: DataTypes.STRING,
             allowNull: false,
         },
+        user: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
         blogpost_id: {
             type: DataTypes.INTEGER,
             references: {

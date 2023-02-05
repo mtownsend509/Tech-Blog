@@ -1,0 +1,52 @@
+    <title>Tech Blog</title>
+</head>
+
+<body>
+    <header>
+    <h1>Tech Blog</h1>
+    <ul>
+        <li>
+            Dashboard
+        </li>
+        <li>
+            Homepage
+        </li>
+        <li>
+            Log in
+        </li>
+        <li>
+            Log out
+        </li>
+    </ul>
+</header>
+
+<form id = "login">
+      <div>
+            <h2>Please enter a username and password</h2>
+      </div>
+
+      <div class = "login">
+
+      {{!-- username --}}
+      <div class = "login">
+            <input type="username" name="floating_username" id="floating_username" placeholder="Username" required />
+            <label for="floating_username"></label>
+      </div>
+      {{!-- password --}}
+      <div class = "login">
+            <input type="password" name="floating_password" id="floating_password" placeholder="Password" required />
+            <label for="floating_password"></label>
+      </div>
+      {{!-- password confirm --}}
+      <div class = "login">
+            <input type="password" name="repeat_password" id="floating_repeat_password" placeholder="Confirm Password" required />
+            <label for="floating_repeat_password"></label>
+      </div>
+      {{!-- signup button --}}
+      <button type="submit" id="signup_submit" class = "login">
+            <span>
+                  Sign up
+            </span>
+      </button>
+      </div>
+</form>

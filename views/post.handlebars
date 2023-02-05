@@ -1,0 +1,54 @@
+    <title>Tech Blog</title>
+</head>
+
+<body>
+    <header>
+    <h1>Tech Blog</h1>
+    <ul>
+        <li>
+            Dashboard
+        </li>
+        <li>
+            Homepage
+        </li>
+        <li>
+            Log in
+        </li>
+        <li>
+            Log out
+        </li>
+    </ul>
+</header>
+
+<div id = "singlesheet">
+<div class="singlecardcontainer">
+    <div id = "{{blogpost.id}}" class = "singlecard">
+        <div class = "title">
+            <p>{{blogpost.title}}</p>
+            <p id = "postedby">posted by {{blogpost.Profile.username}} on {{blogpost.created_at}}</p>
+        </div>           
+        <div class = "post">
+            <p>{{blogpost.post}}</p>
+        </div>
+    </div>
+</div>
+
+<div>
+    <p id = "commentdiv">Comments</p>
+</div>
+
+<div class = "blockdisplay commentcards">
+{{#each postcomments as |comments|}}
+    <div class="cardcontainer">
+        <div id = "{{comments.id}}" class = "commentcard">
+          <div class = "title">
+              <p id = "postedby">posted by {{comments.user}} on {{comments.created_at}}</p>
+          </div>           
+          <div class = "post">
+             <p>{{comments.text}}</p>
+          </div>
+        </div>
+    </div>
+{{/each}}
+</div>
+</div>

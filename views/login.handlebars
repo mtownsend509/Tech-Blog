@@ -23,25 +23,27 @@
 
 <form>
       <div>
-            <h2>Welcome back!</h2>
+            <h2>Type in your username and password</h2>
       </div>
 
+<div id = "login">
       {{!-- username --}}
-      <div>
-            <input type="username" name="floating_username" id="floating_username" placeholder=" " required />
-            <label for="floating_username">Username</label>
+      <div class = "login">
+            <input type="username" name="floating_username" id="floating_username" placeholder="username" required />
+            <label for="floating_username"></label>
       </div>
 
       {{!-- password --}}
-      <div>
-            <input type="password" name="floating_password" id="floating_password" placeholder=" " required />
-            <label for="floating_password" >Password</label>
+      <div class = "login">
+            <input type="password" name="floating_password" id="floating_password" placeholder="password" required />
+            <label for="floating_password" ></label>
       </div>
 
       {{!-- login button --}}
-      <button type="submit" id="login_submit" >
+      <button type="submit" id="login_submit" class = "login">
             <span>
                   Log in
             </span>
       </button>
+</div>
 </form>

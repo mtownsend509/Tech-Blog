@@ -36,6 +36,7 @@ ul :hover {
 
 footer {
     position: fixed;
+    display: block;
     bottom: 0px;
     left: 0px;
     justify-content: center;
@@ -93,29 +94,34 @@ div {
     height: 100%;
     display: flex;
     justify-content: center;
+    overflow: auto;
 }
 
 .card {
     margin-top: 2%;
     width: 95%;
-    height: 105px;
+    height: 100%;
 }
 
 .post {
-    height: 70%;
+    height: 80%;
     align-items: center;
     display: flex;
-    border: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
 }
 
 .title {
-    height: 35px;
+    height: 10%;
     background-color: #231010;
-    color: white;
+    color: black;
     display: flex;
     align-items: center;
-    border: solid;
     border-color: black;
+    border-top: solid;
+    border-right: solid;
+    border-left: solid;
 }
 
 .profileCard {
@@ -166,5 +172,105 @@ main {
 span {
     background-color: #231010;
 }
+
+#login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login {
+    margin: auto;
+}
+
+button :hover {
+    cursor: pointer;
+}
+
+#newpost {
+
+    position: fixed;
+    bottom: 100px;
+}
+
+/* .post {
+    height: 80vh;
+    width: 100vw;
+} */
+
+#title {
+    margin: auto;
+    width: 50vw;
+}
+
+#titleinput {
+    width: 85%;
+    border: solid;
+    border-radius: 5px;
+}
+
+#body {
+    height: 40vh;
+    width: 75vw;
+    display: flex;
+}
+
+#bodyinput {
+    width: 90%;
+    height: 100%;
+    border: solid;
+    border-radius: 10px;
+}
+
+#bodylabel {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 3px;
+}
+
+.blockdisplay {
+    display: block;
+}
+
+.commentcard {
+    margin-top: 2%;
+    width: 80%;
+    height: 10%;
+}
+
+.singlecard {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    width: 90%;
+    height: 100%;
+}
+
+#commentdiv {
+    margin-top: 2vh;
+    width: 97vw;
+    border: solid;
+    margin: auto;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#231010;
+    color: white;
+    border-color: black;
+}
+
+.singlecardcontainer {
+    height: 40vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#singlesheet {
+    margin-bottom: 6%;
+}
+
 
 
