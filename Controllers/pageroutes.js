@@ -32,7 +32,7 @@ router.get('/', async (req, res) => {
     })
 });
 
-router.get('/dashboard', async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
     Blogpost.findAll({
         where: {
             profile_id: 1
@@ -128,12 +128,9 @@ router.get('/signup', async (req,res) => {
     res.render('signup');
 })
 
-router.get('/addpost', async (req,res) => {
+router.get('/addpost', withAuth, async (req,res) => {
     res.render('addpost');
 })
 
-router.get('/post', async (req,res) => {
-    res.render('post')
-})
 
 module.exports = router;

@@ -272,5 +272,21 @@ button :hover {
     margin-bottom: 6%;
 }
 
+.post-submit {
+    margin-top: 3%;
+}
+
+#spacer {
+    margin-top: 10%;
+}
+
+.formatt {
+    margin-bottom: 3%;
+}
+
+#bodyinput {
+    height: 90%;
+    margin-top: 1%;
+}
 
 
